@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;;
+}
+
+#app {
+    background-image: url('forestbridge.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: opa 0.8s;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.coming {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.coming h1 {
+    font-size: 58px;
+    font-weight: 400;
+    animation: topToBottom  0.8s;
+}
+
+.coming hr {
+    height: 0;
+    width: 40%;
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 15px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 19px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.footer a{
+    color: #fff;
+}
+
+@keyframes topToBottom {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes opa {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
